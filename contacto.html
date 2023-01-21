@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Barbería alura</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="contenedor-img">
+            <img class="img" src='img/productos/logo.png'>
+        </h1>
+
+        <button class="button-menu">
+            <svg class="menu mostrar-menu" id="menu" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <svg class="menu"  id="cerrar" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </button>
+
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="index.html" >inicio</a>
+                </li>
+                <li>
+                    <a href="productos.html">productos</a>
+                </li>
+                <li>
+                    <a href="contacto.html">contacto</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main class="contenedor contenedor-contacto">
+        <form class="formulario">
+            <label for="nombre" class="label">Nombre y apellido</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" class="input" required autocomplete="off">
+
+            <label for="email" class="label">Correo electrónico</label>
+            <input type="email" name="email" id="email" placeholder="Email"class="input" required autocomplete="off">
+
+            <label for="telefono" class="label">Teléfono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" class="input" required autocomplete="off">
+
+            <label for="mensaje" class="label">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="70" rows="10" class="input" required autocomplete="off"></textarea>
+
+            <fieldset class="contacto" >
+                <legend class="label">¿Cómo le gustaría que lo contactemos?</legend>
+                <label for="radio-email">
+                    <input type="radio" name="contacto" id="radio-email" value="email" class="input animacion">Email
+                </label>
+                
+                <label for="radio-telefono">
+                    <input type="radio" name="contacto" id="radio-telefono" value="telefono" class="input animacion">Teléfono
+                </label>
+                
+                <label for="radio-wpp" >
+                    <input type="radio" name="contacto" id="radio-wpp" value="wpp" class="input animacion" checked>Whatsapp
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend class="label">¿En cuál horario le gustaría ser atendido?</legend>
+                <select name="horario" id="horario" class="horario" placeholder="horario">
+                    <option value="Mañana">Mañana</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noche">Noche</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label for="novedades" class="novedades"> 
+                    <input type="checkbox" class="novedades-checkbox animacion" name="novedades" id="novedades" checked> ¿Le gustaría recibir novedades de la Barbería Alura?
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Enviar formulario" class="submit ">
+
+        </form>
+
+        <section class="horarios">
+            <table class = "tabla">
+                <thead class="encabezado">
+                    <tr>
+                        <th>Días</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody class = "cuerpo">
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h - 20h</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <img class="img-footer" src="img/productos/logo-blanco.png" alt="logo de la compañia">
+        <p class="Copyright">Copyright Barbería Alura 2023</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
