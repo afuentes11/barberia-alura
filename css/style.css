@@ -245,7 +245,7 @@ ul{
 .footer{
     padding-bottom: 30px;
     text-align:center;
-    background: url(img/productos/bg.jpg);
+    background: url(../img/productos/bg.jpg);
 }
 
 .img-footer{
